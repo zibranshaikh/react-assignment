@@ -26,7 +26,7 @@ const RecordsFormFieldData = [
         label: "Phone Number",
         name: "phoneNumber",
         id: "phoneNumber",
-        placeholder: "Enter First Name",
+        placeholder: "Enter Phone Number",
     },
     {
         type: "text",
@@ -37,7 +37,22 @@ const RecordsFormFieldData = [
     },
 ]
 
+//Schema for Users form Fields
+const UsersFieldSchema = {
+    firstName: '',
+    lastName: '',
+    phoneNumber: '',
+    Address: '',
+}
+const dataSchema = {
+    activeUsers: 0,
+    inactiveUsers: 0,
+    userLogs: []
+}
+
 export { 
+    UsersFieldSchema, 
+    dataSchema,
     RecordsFormFieldData,
     RecordTableHeaderData
 }
