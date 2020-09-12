@@ -1,5 +1,4 @@
 const RecordTableHeaderData = [
-    { headerName:'#', field:'id'},
     { headerName:'First Name', field:'firstName'},
     { headerName:'Last Name', field:'lastName'},
     { headerName:'Phone Number', field:'phoneNumber'},

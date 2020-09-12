@@ -42,8 +42,8 @@ const Users = (props) => {
 	},[]);
 	
 	// //Function for handle table checkbox.
-	const handleCheck = (id) => {
-		handleCheckPartial(id, usersData, setSelectUsers, selectedUsers)
+	const handleCheck = (phoneNumber) => {
+		handleCheckPartial(phoneNumber, usersData, setSelectUsers, selectedUsers)
 	}
 
 	//Function for handle Users form field changes.

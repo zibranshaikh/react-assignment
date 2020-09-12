@@ -20,7 +20,7 @@ const TableComponent = (props) => {
 			<Table responsive="md" className={className || ''}>
 				<thead>
 					<tr>
-						<th></th>
+						<th>#</th>
 							{tableHeader && tableHeader.length > 0 && 
 								tableHeader.map((header, index) => (
 								<th key={index} onClick={() => handleHeaderClick(header.field)}>{header.headerName}</th>
@@ -34,8 +34,8 @@ const TableComponent = (props) => {
 							<Form.Group className="mb-0">
 								<Form.Check 
 									type="checkbox" 
-									checked={selectedUsers.includes(data.id)}
-									onChange={() => handleCheck(data.id)}
+									checked={selectedUsers.includes(data.phoneNumber)}
+									onChange={() => handleCheck(data.phoneNumber)}
 								/>
 							</Form.Group> 
 						</td>

@@ -9,15 +9,15 @@ import { pushNotification } from '../../utils/notifications';
 import './Users.css';
 
 //Function for handle table checkbox.
-export const handleCheckPartial = (id, usersData, setSelectUsers, selectedUsers) => {
+export const handleCheckPartial = (phoneNumber, usersData, setSelectUsers, selectedUsers) => {
   let Users = usersData.userLogs.length > 0 ? [...usersData.userLogs] : [];
-  const index = Users.findIndex(item => item.id === id);
+  const index = Users.findIndex(item => item.phoneNumber === phoneNumber);
   const newSelectedUsers = usersData.userLogs.length > 0 ? [...selectedUsers] : []
   if(index !== -1){
-    if(newSelectedUsers.includes(id)){
+    if(newSelectedUsers.includes(phoneNumber)){
       newSelectedUsers.splice(index, 1) 
     }else{
-      newSelectedUsers.push(id) 
+      newSelectedUsers.push(phoneNumber) 
     }
     setSelectUsers(newSelectedUsers)
   }
@@ -76,7 +76,11 @@ export const onHeaderClickPartial = (field, sorting, usersData, setUsersData) =>
       }
       return 0
     } )
-    setUsersData(newRecordList)
+    const data = {
+      ...usersData,
+      userLogs: newRecordList
+    }
+    setUsersData(data)
   }
 }
 
@@ -88,7 +92,7 @@ export const handleSubmitPartial = async (usersData, recordMode, getUsersList, u
     return   
   }
   const newUsersData = usersData.userLogs.length > 0 ? [...usersData.userLogs] : []
-  newUsersData.push({...usersFields, id: (usersData.userLogs.length + 1).toString()})
+  newUsersData.push({...usersFields})
   const data = {
     activeUsers: 231,
     inactiveUsers: 454,
@@ -101,7 +105,7 @@ export const handleSubmitPartial = async (usersData, recordMode, getUsersList, u
 
 //Function for handling submit button of Cofirmation modal.
 export const handleSubmitConfirmPartial = async (usersData, selectedUsers, getUsersList, setSelectUsers, setConfirmModal) => {
-  const newUsersData = usersData.userLogs.filter(item => !selectedUsers.includes(item.id))
+  const newUsersData = usersData.userLogs.filter(item => !selectedUsers.includes(item.phoneNumber))
   const data = {
     activeUsers: 231,
     inactiveUsers: 454,
