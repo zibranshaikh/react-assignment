@@ -1,0 +1,219 @@
+.searchField{
+  max-width: 200px;
+  border-radius: 50px !important;
+  background-color: #fff !important;
+  border-color: gray !important;
+  background-image: url('../../assets/images/search.png');
+  background-position: center left 12px;
+  padding-left: 37px !important;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  height: 35px !important;
+  box-sizing: border-box;
+}
+header{
+  background: gainsboro;
+    padding: 10px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.searchField + p {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  left: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+.deleteBtn {
+  border-color: #dc3545 !important;
+}
+.addRecordBtn:not(:hover){
+  color: #007bff !important;
+}
+.deleteBtn:not(:hover){
+  color: #dc3545 !important;
+}
+
+.Usersec {
+  display: flex;
+}
+
+.menu-items{
+  cursor: pointer;
+  color: #fbfbfb;
+}
+.active-inactive{
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.userCard{
+  width: 20% !important;
+  min-height: calc(100vh - 20px) !important;
+  background-color: #935A36 !important;
+}
+
+.logsCard{
+  width: 80% !important;
+}
+.bodyCard {
+  min-height: calc(100vh - 20px) !important;
+  width: 95% !important;
+}
+.addRecordBtn:not(:hover) {
+  background: none !important;
+}
+.btnGroup .btn{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  padding-right: 16px;
+  font-weight: 600;
+  border-radius: 7px;
+}
+.docIMg{
+  width: 50px;
+}
+.btnGroup .btn:not(:hover){
+  background-color: transparent;
+}
+#record-table .table thead th {
+  cursor: pointer;
+  border: none;
+  background-color: #e0e0e0;
+  font-weight: 400;
+  font-size: 16px;   
+}
+
+#record-table tbody tr:last-child{
+  border: none;
+}
+#record-table .table th, .table td
+{
+  border: none !important;
+  vertical-align: inherit !important;
+}
+
+#record-table .table thead th:first-child
+{
+width: 50px;
+}
+
+
+#record-table  .table td:nth-child(2)
+{
+ color: #404A3D;
+}
+
+#record-table  .table tr
+{
+  border-bottom: 1px solid rgba(135, 137, 134, 0.3);
+  transition-duration: 0.4s;
+-webkit-transition-duration: 0.4s;
+-moz-transition-duration: 0.4s;
+-o-transition-duration: 0.4s;
+-ms-transition-duration: 0.4s;
+}
+
+#record-table  .table tr:hover
+{
+background-color: #F5F0E9;
+transition-duration: 0.4s;
+-webkit-transition-duration: 0.4s;
+-moz-transition-duration: 0.4s;
+-o-transition-duration: 0.4s;
+-ms-transition-duration: 0.4s;
+
+}
+
+.color-dark .fa
+{
+color: #404A3D
+}
+
+.action-btns
+{
+opacity: 1;
+text-align: right;
+padding-right: 20px;
+color: #111410;
+
+}
+
+#record-table .table .pr-20
+{
+padding-right: 20px !important;
+}
+
+#record-table .table tr:hover .action-btns
+{
+visibility: visible;
+opacity: 1;
+transition-duration: 0.4s;
+-webkit-transition-duration: 0.4s;
+-moz-transition-duration: 0.4s;
+-o-transition-duration: 0.4s;
+-ms-transition-duration: 0.4s;
+}
+
+#record-table .table .action-btns .fa
+{
+font-size: 18px;
+cursor: pointer;
+}
+
+#record-table .page-item.disabled .page-link {
+color: #878986;
+pointer-events: none;
+cursor: auto;
+background-color: #fff;
+border-color: rgba(135, 137, 134, 0.3);
+}
+
+
+#record-table .page-item.active .page-link {
+z-index: 3;
+color: #fff;
+background-color: #007E59;
+border-color: #007E59;
+}
+
+#record-table .page-link {
+position: relative;
+display: block;
+padding: .5rem .75rem;
+margin-left: -1px;
+line-height: 1.25;
+color: #404A3D;
+background-color: #fff;
+border: 1px solid #dee2e6;
+}
+
+#record-table .page-link:hover
+{
+z-index: 2;
+color: #404A3D;
+text-decoration: none;
+background-color: #e9ecef;
+border-color: #dee2e6;
+}
+
+#record-table .pagination
+{
+margin-top: 20px;
+display: flex;
+justify-content: flex-end;
+}
+
+.modalForm .form-control + p,.modalForm .form-control + div{
+  margin: 0;
+  min-height: 19px;
+  line-height: 1;
+
+}
+.modalForm  .form-group{
+  margin-bottom: 10px;
+}

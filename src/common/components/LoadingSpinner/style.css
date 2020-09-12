@@ -1,0 +1,36 @@
+
+/* Loading spinner */
+.loader{
+    align-self: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width:100vw;
+    z-index: 999;
+    top: 0px;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+  }
+  
+  .loader ul{
+    padding-left: 0;
+  }
+  
+  .loader ul li{
+    list-style-type: none;
+    text-align: center
+  }
+  
+  .small_loader{
+    align-self: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: absolute;
+    height: 95%;
+    width: 78%;
+    padding-top: 35%;
+  }
+  
